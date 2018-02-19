@@ -21,6 +21,7 @@ class CampaignList extends Component {
 		            <div className="card-action">
 		              <a>Yes: {campaign.yes}</a>
 		              <a>No: {campaign.no}</a>
+		              <p className="right">Last respond: {new Date(campaign.lastResponded).toLocaleDateString()}</p>
 		            </div>
 		          </div>
 		        </div>

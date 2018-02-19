@@ -11,15 +11,15 @@ class CampaignList extends Component {
 		return this.props.campaigns.reverse().map(campaign => {
 			return (
 			  <div className="row">
-		        <div className="col s12 m6">
-		          <div className="card red lighten-4" key={campaign._id}>
-		            <div className="card-content">
+		        <div className="col s12 m12 l12">
+		          <div className="card blue-grey darken-1" key={campaign._id}>
+		            <div className="card-content white-text">
 		              <span class="card-title">{campaign.title}</span>
 		              <p>{campaign.body}</p>
 		              <p className="right">Sent on: {new Date(campaign.dateSent).toLocaleDateString()}</p>
 		            </div>
 		            <div className="card-action">
-		              <a>Yes: {campaign.yes}</a>
+		              <a className="">Yes: {campaign.yes}</a>
 		              <a>No: {campaign.no}</a>
 		              <p className="right">Last respond: {new Date(campaign.lastResponded).toLocaleDateString()}</p>
 		            </div>

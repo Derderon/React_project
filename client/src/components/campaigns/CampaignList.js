@@ -14,7 +14,7 @@ class CampaignList extends Component {
 		        <div className="col s12 m12 l12">
 		          <div className="card blue-grey darken-1" key={campaign._id}>
 		            <div className="card-content white-text">
-		              <span class="card-title">{campaign.title}</span>
+		              <span className="card-title">{campaign.title}</span>
 		              <p>{campaign.body}</p>
 		              <p className="right">Sent on: {new Date(campaign.dateSent).toLocaleDateString()}</p>
 		            </div>

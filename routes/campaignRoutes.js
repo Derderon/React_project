@@ -17,7 +17,11 @@ module.exports = app => {
 	});
 
 	app.get("/api/campaigns/:campaignId/:choice", (req, res) => {
-		res.send("Thank you for your feedback!");
+		<div className="card blue-grey darken-1">
+			<div className="card-content white-text">
+			<span className="card-title center">res.send("Thank you for your feedback!");</span>
+			</div>
+		</div>
 	});
 
 	app.post("/api/campaigns/webhooks", (req, res) => {

@@ -12,7 +12,7 @@ class CampaignList extends Component {
 			return (
 			  <div className="row">
 		        <div className="col s12 m6">
-		          <div className="card darken-1" key={campaign._id}>
+		          <div className="card red lighten-2 text-white center-align" key={campaign._id}>
 		            <div className="card-content">
 		              <span class="card-title">{campaign.title}</span>
 		              <p>{campaign.body}</p>

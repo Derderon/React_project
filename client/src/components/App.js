@@ -5,8 +5,8 @@ import * as actions from "../actions";
 
 import Header from "./Header";
 import Landing from "./Landing";
-const Dashboard = () => <h2>Dashboard</h2>;
-const NewCampaign = () => <h2>NewCampaign</h2>;
+import Dashboard from "./Dashboard";
+import CampaignNew from "./campaigns/CampaignNew";
 
 class App extends Component {
 	componentDidMount() {
@@ -21,7 +21,7 @@ class App extends Component {
 						<Header />
 						<Route exact path="/" component={Landing} />
 						<Route exact path="/campaigns" component={Dashboard} />
-						<Route path="/campaigns/new" component={NewCampaign} />
+						<Route path="/campaigns/new" component={CampaignNew} />
 					</div>
 				</BrowserRouter>
 			</div>

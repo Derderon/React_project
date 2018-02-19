@@ -32,7 +32,7 @@ class Header extends Component {
 			      >
 			     	 Feedback
 			      </Link>
-			      <ul id="nav-mobile" className="right hide-on-med-and-down">
+			      <ul id="side-nav" className="right hide-on-med-and-down">
 			        {this.renderContent()}
 			      </ul>
 			    </div>

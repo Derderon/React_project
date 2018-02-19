@@ -24,11 +24,6 @@ class CampaignList extends Component {
 		              <p className="right white-text">Last respond: {new Date(campaign.lastResponded).toLocaleDateString()}</p>
 		            </div>
 		          </div>
-		          <div className="fixed-action-btn">
-		  	  	  	<Link to="/campaigns/new" className="btn-floating btn-large red">
-		    	 		<i className="material-icons">add</i>
-		      		</Link>
-		    	  </div>
 		        </div>
 		      </div>
 		    );
